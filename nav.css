@@ -1,0 +1,93 @@
+body {
+	margin:0;
+	}
+	
+nav{
+	margin:0 auto;
+	color:black;
+	}	
+	
+body#home nav li:nth-child(1) a, body#archive nav li:nth-child(2) a, body#blog nav li:nth-child(3) a,body#rss nav li:nth-child(4) a,  body#contact nav li:nth-child(5) a, body#friends nav li:nth-child(6) a {
+	color:#EDBB3A;
+}
+	
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;  
+}
+
+ul.topnav li {
+	float: left;
+	width:16.6666667%;
+	text-align:center;
+	}
+
+ul.topnav li a {
+  display: inline-block;
+  padding: 2em 0 2em 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul.topnav li.icon {
+	display: none;
+	}
+
+@media screen and (max-width:940px) {
+  ul.topnav li a {
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: .5em;
+}
+  ul.topnav li:not(:first-child) {
+	  display: none;
+	  }
+	  
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+	padding-right: 1.5em;
+  }
+
+ ul.topnav.responsive {position: relative;}
+ ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:680px) {
+  header{
+	  font-size:1.5em;
+  }
+  
+ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
