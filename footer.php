@@ -1,7 +1,7 @@
 <div id="footer">
     
         <ul>
-            <li>&copy;<?php echo date(' Y'); ?></li>
+            <li>&copy;<?php $now=new DateTime(); echo $now->format('Y'); ?></li>
             <li><a href="<?php bloginfo('url'); ?>">lizstonesthrow</a></li> 
             <li>All Rights Reserved</li>
         </ul>
